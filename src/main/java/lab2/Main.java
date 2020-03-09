@@ -19,6 +19,11 @@ public class Main {
         spamList[4] = t1;
         spamList[5] = new Faculty("fac@ulty.com");
 
+        Student stud = new Student("x", "y", "z", "v");
+        stud.addGrade(2);
+        stud.addGrade(3);
+        System.out.println(stud.getGradesAverage());
+
         for(EmailRecipient recipient : spamList) {
             String email = recipient.getEmailAddress();
             System.out.println(email);
